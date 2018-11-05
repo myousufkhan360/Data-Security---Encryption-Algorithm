@@ -1,0 +1,15 @@
+k = 4;
+p ='ilikecomputersecurity';
+r='a':'z';
+for t = 1:length(p)
+    z(t)= find (r==p(t))-1;
+end
+x = mod (z+k , 26);
+ct = r(x);
+disp(ct);
+for t = 1 : length(ct)
+    y(t) = find(r==ct(t))+1;
+end
+a=mod(y-k,26);
+pt=r(a);
+disp(pt);
